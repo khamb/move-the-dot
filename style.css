@@ -5,7 +5,7 @@ body{
 #container{
   border: 1px solid black;
   border-radius: 10px;
-  width:90%;
+  width:80%;
   margin: auto;
   text-align: center;
   padding:inherit;
@@ -20,8 +20,8 @@ body{
 
 
 .boule{
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 270px;
   text-align: center;
   position: relative;

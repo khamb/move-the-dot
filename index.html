@@ -14,6 +14,7 @@
     <div id="container">
 
      <div class="boule">
+
      </div>
 
 
@@ -34,6 +35,21 @@
 
     //fonction
 
+    function isOut(){
+
+      var bouleX = $('.boule').position().left;
+      var bouleY = $('.boule').height();
+      var boxX = (  $(window).width()-$('#container').width()  )/2;
+      var boxY =  Math.abs($('#container').position().top) ;
+
+      if(bouleX < boxX || bouleY < boxY){
+        alert('You\'re out of the box! \n'+
+        'boxY '+boxY+'\n bouleY '+bouleY);
+      }
+
+
+    }
+
 
 
 
@@ -42,28 +58,37 @@
       $('.left').click(function(){
         $('.boule').animate({
           'left': '-=10px'
-      });
+      },function(){
+        isOut();
 
       });
+
+    });
 
       $('.right').click(function(){
-        $('.boule').css({
+        $('.boule').animate({
           'left': '+=10px'
-        })
+      }, function(){
+        isOut();
+      });
 
       });
 
       $('.up').click(function(){
-        $('.boule').css({
+        $('.boule').animate({
           'top': '-=10px'
-        })
+      }, function(){
+        isOut();
+      });
 
       });
 
       $('.down').click(function(){
-        $('.boule').css({
+        $('.boule').animate({
           'top': '+=10px'
-        })
+      }, function(){
+        isOut();
+      });
 
       });
 
