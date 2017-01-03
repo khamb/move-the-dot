@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bouge toi </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript"  src="jquery-3.1.1.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <span id = "logo"> Bouger la Boule</span> </header>
+
+    <div id="container">
+
+     <div class="boule">
+     </div>
+
+
+    </div>
+
+    <div id="controleur">
+      <button class="left" type="button" >&#8678;</button>
+      <button class="right" type="button" >&#8680;</button>
+      <button class="up" type="button" >&#8679;</button>
+      <button class="down" type="button" >&#8681;</button>
+
+    </div>
+
+
+
+    <!-- debut de mon script-->
+    <script>
+
+    //fonction
+
+
+
+
+    $(function(){
+
+      $('.left').click(function(){
+        $('.boule').animate({
+          'left': '-=10px'
+      });
+
+      });
+
+      $('.right').click(function(){
+        $('.boule').css({
+          'left': '+=10px'
+        })
+
+      });
+
+      $('.up').click(function(){
+        $('.boule').css({
+          'top': '-=10px'
+        })
+
+      });
+
+      $('.down').click(function(){
+        $('.boule').css({
+          'top': '+=10px'
+        })
+
+      });
+
+      $('#logo').hover(function(){
+
+        $(this).css({
+          'border': '2px solid purple',
+          'border-radius': '2px',
+          'color': 'purple',
+          'background':'white'
+        });
+
+      });
+
+        $('#logo').mouseleave(function(){
+
+          $(this).css({
+            'border': '2px solid #fff',
+            'border-radius': '2px',
+            'padding': '15px',
+            'color':'white',
+            'background':'purple'
+          });
+
+      });
+
+    });
+
+    </script>
+
+  </body>
+
+</html>

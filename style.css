@@ -1,0 +1,56 @@
+body{
+  font-size: 30px;
+}
+
+#container{
+  border: 1px solid black;
+  border-radius: 10px;
+  width:90%;
+  margin: auto;
+  text-align: center;
+  padding:inherit;
+}
+#logo{
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 15px;
+  background: purple;
+  color: white;
+}
+
+
+.boule{
+  width: 130px;
+  height: 130px;
+  margin-bottom: 270px;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  background: green;
+}
+
+#controleur{
+  margin-top: 15px;
+  text-align: center;
+  padding: auto;
+}
+
+
+button{
+background-color: grey; /* Green */
+border-radius: 50%;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+header{
+  background: purple;
+  padding:50px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
